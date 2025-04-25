@@ -1,9 +1,9 @@
-<!DOCTYPE html>
-<html lang="en">
+<!DOCTYPE html><html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>TFD Offer Zone</title>
+  <link rel="icon" href="favicon.png" type="image/png">
   <style>
     body {
       font-family: 'Verdana', sans-serif;
@@ -26,7 +26,7 @@
       text-align: center;
       padding: 20px;
     }
-    .offer-card {
+    .card {
       background: white;
       margin: 20px auto;
       padding: 20px;
@@ -35,7 +35,10 @@
       box-shadow: 0 8px 16px rgba(0,0,0,0.1);
       transition: transform 0.3s ease, box-shadow 0.3s ease;
     }
-    .offer-card:hover {
+    .card:hover {
+      transform: scale(1.05);
+    }
+    .offer-card-hover {
       transform: translateY(-5px);
       box-shadow: 0 12px 24px rgba(0,0,0,0.15);
     }
@@ -43,46 +46,39 @@
       color: #ff5722;
     }
     .btn {
+      display: inline-block;
       background: #ff5722;
       color: white;
-      padding: 12px 24px;
+      padding: 10px 20px;
+      margin-top: 10px;
+      border-radius: 5px;
       text-decoration: none;
-      border-radius: 30px;
-      display: inline-block;
-      margin-top: 15px;
-      transition: background 0.3s, transform 0.3s;
-      font-weight: bold;
-      font-size: 16px;
+      transition: background 0.3s;
     }
     .btn:hover {
       background: #e64a19;
-      transform: scale(1.05);
     }
   </style>
 </head>
 <body>
-
   <header>
     <img src="banner.png" alt="TFD Offer Zone Banner">
     <h1>Welcome to TFD Offer Zone</h1>
-  </header>
-
-  <div class="content">
+    <p>Grab the Hottest Deals Today!</p>
+  </header>  <div class="content">
     <h2>Best Deals of 2025</h2>
-    <p>Special discounts, exclusive offers, and much more!</p>
+    <p>Special discounts, exclusive offers, and much more!</p><div class="card offer-card">
+  <h2>Flash Sale!</h2>
+  <p>Up to 70% off on electronics and fashion items.</p>
+  <a href="#" class="btn">Shop Now</a>
+</div>
 
-    <div class="offer-card">
-      <h2>Flash Sale!</h2>
-      <p>Up to 70% off on electronics and fashion items.</p>
-      <a href="#" class="btn">Shop Now</a>
-    </div>
+<div class="card offer-card">
+  <h2>Exclusive Discounts</h2>
+  <p>Special coupon codes for TFD visitors only!</p>
+  <a href="#" class="btn">Get Coupons</a>
+</div>
 
-    <div class="offer-card">
-      <h2>Exclusive Discounts</h2>
-      <p>Special coupon codes for TFD visitors only!</p>
-      <a href="#" class="btn">Get Coupons</a>
-    </div>
   </div>
-
 </body>
 </html>
