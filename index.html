@@ -5,143 +5,82 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>TFD Offer Zone</title>
     <style>
-        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
-
-        * {
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
             margin: 0;
             padding: 0;
-            box-sizing: border-box;
-        }
-
-        body {
-            font-family: 'Roboto', sans-serif;
-            background: #f4f6f9;
-        }
-
-        header {
-            background: linear-gradient(90deg, #ff6a00, #ee0979);
-            color: white;
-            text-align: center;
-            padding: 70px 20px;
-            border-bottom-left-radius: 50px;
-            border-bottom-right-radius: 50px;
-        }
-
-        header h1 {
-            font-size: 48px;
-            margin-bottom: 10px;
-        }
-
-        header p {
-            font-size: 20px;
-        }
-
-        .btn {
-            margin-top: 20px;
-            background-color: #fff;
-            color: #ff6a00;
-            padding: 10px 25px;
-            text-decoration: none;
-            border-radius: 25px;
-            font-weight: bold;
-            display: inline-block;
-            box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-        }
-
-        .offers {
-            padding: 40px 20px;
-            text-align: center;
-        }
-
-        .offers h2 {
-            margin-bottom: 30px;
-            font-size: 28px;
+            background-color: #f0f4f8;
             color: #333;
         }
-
-        .cards {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 20px;
-            max-width: 1000px;
-            margin: auto;
-        }
-
-        .card {
-            background: white;
-            border-radius: 15px;
-            padding: 20px;
-            box-shadow: 0 6px 12px rgba(0,0,0,0.05);
-            transition: transform 0.2s;
-        }
-
-        .card:hover {
-            transform: translateY(-5px);
-        }
-
-        .card img {
-            width: 100%;
-            border-radius: 10px;
-        }
-
-        .card h3 {
-            margin: 15px 0 10px;
-            font-size: 20px;
-            color: #222;
-        }
-
-        .card p {
-            font-size: 16px;
-            color: #555;
-        }
-
-        footer {
-            background-color: #111;
-            color: #ccc;
-            padding: 30px 10px;
+        header {
+            background-color: #ff5722;
+            color: white;
+            padding: 20px 0;
             text-align: center;
-            margin-top: 50px;
-            border-top-left-radius: 30px;
-            border-top-right-radius: 30px;
         }
-
-        footer p {
-            margin: 0;
+        section {
+            padding: 30px 20px;
+            text-align: center;
+        }
+        .offer-box {
+            background-color: white;
+            margin: 20px auto;
+            padding: 20px;
+            max-width: 400px;
+            border-radius: 12px;
+            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+        }
+        .offer-box h2 {
+            color: #ff5722;
+            margin-bottom: 10px;
+        }
+        .btn {
+            display: inline-block;
+            margin-top: 15px;
+            padding: 10px 20px;
+            background-color: #ff5722;
+            color: white;
+            text-decoration: none;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        .btn:hover {
+            background-color: #e64a19;
+        }
+        footer {
+            background-color: #263238;
+            color: #bbb;
+            text-align: center;
+            padding: 15px 10px;
+            font-size: 14px;
+            margin-top: 30px;
         }
     </style>
 </head>
 <body>
 
-<header>
-    <h1>TFD Offer Zone</h1>
-    <p>Grab the hottest deals of 2025 before they’re gone!</p>
-    <a href="#offers" class="btn">Browse Offers</a>
-</header>
+    <header>
+        <h1>Welcome to TFD Offer Zone</h1>
+        <p>Special Deals, Exclusive Coupons, and Flash Sales!</p>
+    </header>
 
-<section class="offers" id="offers">
-    <h2>Today's Best Deals</h2>
-    <div class="cards">
-        <div class="card">
-            <img src="https://via.placeholder.com/250x150" alt="Product 1">
-            <h3>Smart Watch</h3>
-            <p>Now only ৳1,999 – Limited stock!</p>
+    <section>
+        <div class="offer-box">
+            <h2>Flash Sale!</h2>
+            <p>Up to 70% OFF on electronics, fashion, and more!</p>
+            <a href="#" class="btn">Shop Now</a>
         </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/250x150" alt="Product 2">
-            <h3>Bluetooth Earbuds</h3>
-            <p>Buy 1 Get 1 Free – ৳999 only!</p>
-        </div>
-        <div class="card">
-            <img src="https://via.placeholder.com/250x150" alt="Product 3">
-            <h3>Mobile Cover</h3>
-            <p>Up to 70% off – All Models Available!</p>
-        </div>
-    </div>
-</section>
 
-<footer>
-    <p>© 2025 TFD Offer Zone. All rights reserved.</p>
-</footer>
+        <div class="offer-box">
+            <h2>Exclusive Discounts</h2>
+            <p>Get special coupon codes only for TFD visitors!</p>
+            <a href="#" class="btn">Get Coupons</a>
+        </div>
+    </section>
+
+    <footer>
+        © 2025 TFD Offer Zone | Best Deals Just for You!
+    </footer>
 
 </body>
 </html>
